@@ -1,0 +1,19 @@
+meta {
+  name: Get Balance
+  type: http
+  seq: 3
+}
+
+get {
+  url: {{baseUrl}}/transactions/balance
+  body: none
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+vars:pre-request {
+  baseUrl: http://localhost:3000/api
+}

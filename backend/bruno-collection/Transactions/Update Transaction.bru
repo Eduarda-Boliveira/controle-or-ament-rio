@@ -1,0 +1,29 @@
+meta {
+  name: Update Transaction
+  type: http
+  seq: 5
+}
+
+put {
+  url: {{baseUrl}}/transactions/1
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+    "type": "expense",
+    "amount": 175.00,
+    "description": "Compra no supermercado - atualizada",
+    "date": "2026-03-09T10:00:00.000Z",
+    "category_id": 1
+  }
+}
+
+vars:pre-request {
+  baseUrl: http://localhost:3000/api
+}

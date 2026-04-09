@@ -1,0 +1,25 @@
+meta {
+  name: Create Category
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{baseUrl}}/categories
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+    "name": "Alimentação"
+  }
+}
+
+vars:pre-request {
+  baseUrl: http://localhost:3001/api
+}
