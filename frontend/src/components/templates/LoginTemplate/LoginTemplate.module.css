@@ -1,0 +1,6 @@
+.container {
+  min-height: 100vh;
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+}
