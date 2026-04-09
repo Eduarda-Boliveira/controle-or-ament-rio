@@ -1,0 +1,127 @@
+.container {
+  width: 100%;
+  margin-top: 32px;
+}
+
+.header {
+  margin-bottom: 16px;
+}
+
+.title {
+  font-size: 20px;
+  font-weight: 600;
+  color: #1f2937;
+  margin: 0;
+}
+
+.loadingContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 48px;
+  color: #6b7280;
+}
+
+.positiveAmount {
+  color: #1b1c1b;
+}
+
+.negativeAmount {
+  color: #c21020;
+}
+
+.typeRevenue {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px;
+  border-radius: 8px;
+  background-color: #c4dbb8;
+  color: #1b1c1b;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.typeExpense {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px;
+  border-radius: 8px;
+  background-color: #ffc7c2;
+  color: #1b1c1b;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.typeCredit {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px;
+  border-radius: 8px;
+  background-color: #ffcb97;
+  color: #1b1c1b;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.actions {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.actionButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px;
+  background-color: transparent;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  cursor: pointer;
+  color: #6b7280;
+  transition: all 0.2s;
+}
+
+.actionButton:hover {
+  background-color: #f3f4f6;
+  color: #1b1c1b;
+  border-color: #9ca3af;
+}
+
+.deleteButton:hover {
+  background-color: #fee2e2;
+  color: #c21020;
+  border-color: #ffc7c2;
+}
+
+.errorContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 48px;
+  gap: 16px;
+}
+
+.errorMessage {
+  color: #c21020;
+  font-size: 16px;
+}
+
+.retryButton {
+  padding: 8px 16px;
+  background-color: #367c2b;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.2s;
+}
+
+.retryButton:hover {
+  background-color: #2d6523;
+}

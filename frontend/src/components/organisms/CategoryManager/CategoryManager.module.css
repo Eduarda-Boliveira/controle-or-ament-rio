@@ -1,0 +1,180 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 8px 0;
+  min-height: 300px;
+}
+
+.error {
+  padding: 12px 16px;
+  background-color: #fee;
+  border: 1px solid #fcc;
+  border-radius: 6px;
+  color: #c00;
+  font-size: 14px;
+}
+
+.inputSection {
+  display: flex;
+  flex-direction: column;
+}
+
+.input {
+  flex: 1;
+  padding: 12px 16px;
+  font-size: 16px;
+  border: none;
+  border-bottom: 1px solid #e5e7eb;
+  background-color: transparent;
+  color: #1b1c1b;
+  font-family: 'Noto Sans', -apple-system, BlinkMacSystemFont, Roboto, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  transition: all 0.2s;
+}
+
+.input:hover {
+  border-bottom-color: #9ca3af;
+}
+
+.input:focus {
+  outline: none;
+  border-bottom-color: #367c2b;
+}
+
+.listSection {
+  flex: 1;
+  min-height: 200px;
+}
+
+.buttonSection {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: auto;
+  padding-top: 16px;
+}
+
+.buttonSection button {
+  padding: 12px 24px !important;
+  font-size: 16px !important;
+}
+
+.loading,
+.empty {
+  text-align: center;
+  padding: 40px 20px;
+  color: #6b7280;
+  font-size: 15px;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.item {
+  padding: 12px 16px;
+  background-color: #f9fafb;
+  border-radius: 8px;
+  border: 1px solid #e5e7eb;
+  transition: all 0.2s;
+}
+
+.item:hover {
+  background-color: #f3f4f6;
+}
+
+.viewRow,
+.editRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+
+.name {
+  font-size: 15px;
+  color: #1b1c1b;
+  font-weight: 500;
+}
+
+.actions {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.editBtn,
+.deleteBtn,
+.saveBtn,
+.cancelBtn {
+  padding: 6px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  font-family: 'Noto Sans', -apple-system, BlinkMacSystemFont, Roboto, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  transition: all 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.editBtn {
+  background-color: transparent;
+  color: #6b7280;
+}
+
+.editBtn:hover {
+  background-color: #f3f4f6;
+  color: #1b1c1b;
+  border-color: #9ca3af;
+}
+
+.deleteBtn {
+  background-color: transparent;
+  color: #6b7280;
+}
+
+.deleteBtn:hover {
+  background-color: #fee2e2;
+  color: #c21020;
+  border-color: #ffc7c2;
+}
+
+.saveBtn {
+  background-color: #367c2b;
+  color: white;
+  padding: 6px 12px;
+  border: none;
+}
+
+.saveBtn:hover:not(:disabled) {
+  background-color: #2d6623;
+}
+
+.saveBtn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.cancelBtn {
+  background-color: transparent;
+  color: #6b7280;
+  padding: 6px 12px;
+  border: 1px solid #d1d5db;
+}
+
+.cancelBtn:hover {
+  background-color: #f3f4f6;
+  color: #1b1c1b;
+  border-color: #9ca3af;
+}
+
+.editRow .input {
+  flex: 1;
+}

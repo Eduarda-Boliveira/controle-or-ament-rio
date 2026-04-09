@@ -1,0 +1,70 @@
+.tableContainer {
+  width: 100%;
+  overflow-x: auto;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 16px;
+}
+
+.th {
+  padding: 16px;
+  text-align: left;
+  color: #1b1c1b;
+  border-bottom: 2px solid #e5e7eb;
+  background-color: #f0f0f0;
+}
+
+.th.sortable {
+  cursor: pointer;
+  user-select: none;
+}
+
+.th.sortable:hover {
+  background-color: #e8e8e8;
+}
+
+.headerContent {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.sortIcon {
+  color: #9ca3af;
+  font-size: 12px;
+}
+
+.td {
+  display: table-cell;
+  vertical-align: inherit;
+  text-align: left;
+  padding: 16px;
+  padding-block: 0.5rem;
+  padding-inline: 1rem;
+  border-bottom: 1px solid rgb(199, 198, 197);
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  line-height: 1.5rem;
+  color: #1b1c1b;
+}
+
+.tr:hover {
+  background-color: #f9fafb;
+}
+
+.tr:last-child .td {
+  border-bottom: none;
+}
+
+.emptyMessage {
+  padding: 32px;
+  text-align: center;
+  color: #9ca3af;
+  font-style: italic;
+}

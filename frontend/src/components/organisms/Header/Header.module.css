@@ -1,0 +1,114 @@
+.header {
+  background-color: #fafafaff;
+  border-bottom: 1px solid #d5dbdbff;
+  box-sizing: border-box;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 24px 30px;
+}
+
+.leftSection {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.logoButton {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  transition: opacity 0.2s ease;
+}
+
+.logoButton:hover {
+  opacity: 0.7;
+}
+
+.logoButton:active {
+  opacity: 0.5;
+}
+.title {
+  margin: 0;
+  color: #367c2b;
+  font-size: 24px;
+  font-weight: 400;
+  font-family: 'Noto Sans', -apple-system, BlinkMacSystemFont, Roboto, 'Helvetica Neue', Helvetica, Arial, 'Nimbus Sans L', FreeSans, 'Liberation Sans', sans-serif;
+  letter-spacing: 0.05em;
+}
+
+.userButton {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 16px;
+  background: transparent;
+  border: 1px solid #d5dbdbff;
+  border-radius: 8px;
+  cursor: pointer;
+  color: #333;
+  font-family: 'Noto Sans', -apple-system, BlinkMacSystemFont, Roboto, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  transition: background-color 0.2s ease;
+}
+
+.userButton:hover {
+  background-color: #f0f0f0;
+}
+
+.userButton svg {
+  width: 32px;
+  height: 32px;
+}
+
+.userName {
+  font-weight: 500;
+}
+
+.userContainer {
+  position: relative;
+}
+
+.dropdown {
+  position: absolute;
+  top: calc(100% + 8px);
+  right: 0;
+  left: 0;
+  background: white;
+  border: 1px solid #d5dbdbff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  z-index: 1000;
+}
+
+.dropdownItem {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 16px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-family: 'Noto Sans', -apple-system, BlinkMacSystemFont, Roboto, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #c21020;
+  transition: background-color 0.2s ease;
+  text-align: left;
+}
+
+.dropdownItem:hover {
+  background-color: #f8f8f8;
+}
+
+.dropdownItem svg {
+  width: 32px;
+  height: 32px;
+  flex-shrink: 0;
+}
