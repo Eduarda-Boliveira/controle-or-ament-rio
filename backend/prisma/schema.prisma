@@ -1,0 +1,36 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Category {
+  id        Int      @id @default(autoincrement())
+  userId    String   @map("user_id") @db.VarChar(255)
+  name      String   @db.VarChar(100)
+  createdAt DateTime @default(now()) @map("created_at") @db.Timestamptz()
+  updatedAt DateTime @updatedAt @map("updated_at") @db.Timestamptz()
+
+  transactions Transaction[]
+
+  @@map("categories")
+}
+
+model Transaction {
+  id            Int      @id @default(autoincrement())
+  userId        String   @map("user_id") @db.VarChar(255)
+  categoryId    Int?     @map("category_id")
+  amount        Decimal  @db.Decimal(15, 2)
+  type          String   @db.VarChar(10)
+  paymentMethod String?  @default("dinheiro") @map("payment_method") @db.VarChar(20)
+  description   String?  @db.VarChar(255)
+  date          DateTime @db.Date
+  createdAt     DateTime @default(now()) @map("created_at") @db.Timestamptz()
+  updatedAt     DateTime @updatedAt @map("updated_at") @db.Timestamptz()
+  category Category? @relation(fields: [categoryId], references: [id], onDelete: SetNull)
+
+  @@map("transactions")
+}
